@@ -1,0 +1,33 @@
+{
+    "user1": {
+        "name": "Name",
+        "age": "25",
+        "telephone": "01124105050",
+        "records": [
+            {
+                "date": "2020-01-12",
+                "sickness_details": "",
+                "drugs": "panadol, asprin",
+                "tests": "x-tray,blood test"
+            },
+            {
+                "date": "2020-11-29",
+                "sickness_details": "",
+                "drugs": "",
+                "tests": ""
+            }
+        ]
+    },
+    "user2": {
+        "name": "Name",
+        "age": "25",
+        "telephone": "01124105050",
+        "records": [
+            {
+                "sickness_details": "",
+                "drugs": [],
+                "tests": []
+            }
+        ]
+    }
+}

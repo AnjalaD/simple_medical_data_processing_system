@@ -1,0 +1,46 @@
+{
+    "user1": {
+        "name": "Name",
+        "age": "25",
+        "telephone": "01124105050",
+        "pl": 1,
+        "records": [
+            {
+                "pl": 1,
+                "date": "2020-01-12",
+                "sickness_details": "",
+                "drugs": "panadol, asprin",
+                "tests": "x-tray,blood test"
+            },
+            {
+                "pl": 2,
+                "date": "2020-11-29",
+                "sickness_details": "",
+                "drugs": "",
+                "tests": ""
+            },
+            {
+                "pl": 2,
+                "date": "2020-12-5",
+                "sickness_details": "fever",
+                "drugs": "parasitamol",
+                "tests": "none"
+            }
+        ]
+    },
+    "user2": {
+        "name": "Name",
+        "age": "25",
+        "telephone": "01124105050",
+        "pl": 2,
+        "records": [
+            {
+                "pl": 2,
+                "date": "2020-12-5",
+                "sickness_details": "",
+                "drugs": "",
+                "tests": ""
+            }
+        ]
+    }
+}
