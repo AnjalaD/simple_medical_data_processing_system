@@ -7,18 +7,19 @@ simple python program
 > pip install -r requirements.txt
 > python main.py
 
+### exixting accounts
 
-### exixting accounts 
 * Admin
+
 > username - admin
 > password - 123
 
 * Doctor -staff
+
 > username - doctor
 > password - 123
 
 * kamalperera - patient
+
 > username - patient
 > password - 123
-
-
