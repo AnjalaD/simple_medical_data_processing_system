@@ -2,21 +2,31 @@
     "admin": {
         "password": "202cb962ac59075b964b07152d234b70",
         "type": "Admin",
+        "pl": ""
+    },
+    "specilist_doctor": {
+        "password": "202cb962ac59075b964b07152d234b70",
+        "type": "Staff",
         "pl": 0
     },
-    "staff": {
+    "doctor": {
         "password": "202cb962ac59075b964b07152d234b70",
         "type": "Staff",
         "pl": 1
     },
-    "user1": {
+    "nurse": {
         "password": "202cb962ac59075b964b07152d234b70",
-        "type": "Patient",
-        "pl": 4
+        "type": "Staff",
+        "pl": 2
     },
-    "user2": {
+    "patient": {
         "password": "202cb962ac59075b964b07152d234b70",
         "type": "Patient",
-        "pl": 4
+        "pl": 3
+    },
+    "kamalperera": {
+        "password": "202cb962ac59075b964b07152d234b70",
+        "type": "Patient",
+        "pl": 3
     }
 }
