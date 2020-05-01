@@ -114,6 +114,8 @@ def create_patient_record_prompt():
 
 
 def patient_details_prompt():
+    pl = ['Specilist Doctors only', 'Doctors & above',
+          'Nurses & above', 'Patient & above']
     questions = [
         {
             'type': 'input',
@@ -129,6 +131,13 @@ def patient_details_prompt():
             'type': 'input',
             'name': 'telephone',
             'message': 'Patients telephone : ',
+        },
+        {
+            'type': 'list',
+            'name': 'pl',
+            'message': 'Select privilage level:',
+            'choices': pl,
+            'filter': lambda x: pl.index(x)
         },
     ]
     answers = prompt(questions)

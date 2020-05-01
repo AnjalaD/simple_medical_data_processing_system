@@ -10,6 +10,7 @@ def prepare_for_prompt(records):
     return choices
 
 
+# pl represent the privilege level of user
 def view_records(pl, session_records):
     back = False
     while(not back):
@@ -34,6 +35,8 @@ def view_records(pl, session_records):
             back = True
 
 
+# pl represent the privilege level of user
+# username is given if user is a Patient
 def get_user_records(pl, username=None):
     owner = True
     if username == None:
@@ -45,7 +48,10 @@ def get_user_records(pl, username=None):
 
         user_record = records[username]
         print("\n ----Patient record found!----\n")
+
+        # check for privilege levels
         if(pl <= user_record['pl'] or owner):
+            # granted access to the record
             print('\tName: ' + user_record['name'])
             print('\tAge: ' + user_record['age'])
             print('\tTelephone: ' + user_record['telephone'])
@@ -65,9 +71,9 @@ def add_user_record(pl):
     if username not in records:
         choice = create_patient_record_prompt()
         if(choice == 0):
+            # create new patient record
             patient = patient_details_prompt()
             records[username] = patient
-            records[username] = pl
             records[username]['records'] = []
         elif(choice == 1):
             return
@@ -76,7 +82,10 @@ def add_user_record(pl):
     print("\n Patient record found! (for "
           + username
           + ")\nEnter session details below : ")
+
+    # check for privilege levels
     if pl <= user_record['pl']:
+        # granted access to write new
         print('\tName :' + user_record['name'])
         print('\tAge :' + user_record['age'])
         print('\tTelephone :' + user_record['telephone'])
